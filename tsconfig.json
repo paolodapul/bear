@@ -3,6 +3,7 @@
     "noEmit": true,
     "baseUrl": "./src",
     "strict": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "esModuleInterop": true
   }
 }
