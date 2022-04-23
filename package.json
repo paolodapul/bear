@@ -1,0 +1,9 @@
+{
+  "name": "node-starter",
+  "version": "0.0.1",
+  "description": "Boilerplate for Node applications",
+  "main": "app.js",
+  "repository": "git@github.com:paolodapul/node-starter.git",
+  "author": "Paolo Dapul <paolodapultech@gmail.com>",
+  "license": "MIT"
+}
