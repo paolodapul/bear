@@ -18,7 +18,8 @@
     "typescript": "^4.6.3"
   },
   "scripts": {
-    "build": "babel src --extensions .ts --out-dir dist",
-    "check-types": "tsc"
+    "build": "yarn check-types && yarn transpile",
+    "transpile": "babel src --extensions .ts --out-dir dist",
+    "check-types": "tsc",
   }
 }
