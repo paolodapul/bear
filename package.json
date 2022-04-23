@@ -21,5 +21,6 @@
     "build": "yarn check-types && yarn transpile",
     "transpile": "babel src --extensions .ts --out-dir dist",
     "check-types": "tsc",
+    "start": "nodemon src/app.ts"
   }
 }
