@@ -5,5 +5,8 @@
   "main": "app.js",
   "repository": "git@github.com:paolodapul/node-starter.git",
   "author": "Paolo Dapul <paolodapultech@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "typescript": "^4.6.3"
+  }
 }
