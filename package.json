@@ -18,11 +18,15 @@
     "build": "yarn check-types && yarn transpile",
     "transpile": "babel src --extensions .ts --out-dir dist",
     "check-types": "tsc",
-    "start": "nodemon src/app.ts"
+    "start": "nodemon src/app.ts",
+    "lint": "eslint --ignore-path .gitignore --ext .ts \"src/**/*\""
   },
   "devDependencies": {
     "@types/express": "^4.17.13",
     "@types/node": "^17.0.27",
+    "@typescript-eslint/eslint-plugin": "^5.21.0",
+    "@typescript-eslint/parser": "^5.21.0",
+    "eslint": "^8.14.0",
     "nodemon": "^2.0.15",
     "ts-node": "^10.7.0",
     "typescript": "^4.6.3"
