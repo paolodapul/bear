@@ -1,17 +1,17 @@
-import dotenv from 'dotenv';
-import express from 'express';
+import dotenv from 'dotenv'
+import express from 'express'
 
-dotenv.config();
+dotenv.config()
 
-const app = express();
-const port = process.env.PORT || 3000;
-
+const app = express()
+const port = process.env.PORT || 3000
+console.log('test')
 app.get('/', (req, res) => {
-  res.send(`Welcome to Node Starter | Made with <3 by @paolodapul`);
-});
+  res.send(`Welcome to Node Starter | Made with <3 by @paolodapul`)
+})
 
 app.listen(port, () => {
   return console.log(
-    `Express is listening at http://localhost:${process.env.PORT}`
-  );
-});
+    `Express is listening at http://localhost:${process.env.PORT}`,
+  )
+})
