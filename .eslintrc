@@ -1,7 +1,7 @@
 {
   "parserOptions": {
     "ecmaVersion": 2019,
-    "sourceType": "module",
+    "sourceType": "module"
   },
   "extends": ["eslint:recommended"],
   "overrides": [
@@ -11,10 +11,12 @@
       "parserOptions": {
         "project": "./tsconfig.json"
       },
-      "plugins": ["@typescript-eslint/eslint-plugin"],
+      "plugins": ["@typescript-eslint"],
       "extends": [
-        "plugin:@typescript-eslint/eslint-recommended",
-        "plugin:@typescript-eslint/recommended"
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:@typescript-eslint/recommended-requiring-type-checking",
+        "eslint-config-prettier"
       ]
     }
   ]
