@@ -1,7 +1,6 @@
 {
   "compilerOptions": {
     "noEmit": true,
-    "baseUrl": "./src",
     "strict": true,
     "skipLibCheck": true,
     "esModuleInterop": true
