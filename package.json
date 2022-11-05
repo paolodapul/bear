@@ -5,6 +5,10 @@
   "repository": "git@github.com:paolodapul/bear.git",
   "author": "Paolo Dapul <paolodapultech@gmail.com>",
   "license": "MIT",
+  "engines": {
+    "node": ">= 18.12.1"
+  },
+  "engineStrict": true,
   "scripts": {
     "start": "concurrently \"pnpm swc-watch\" \"pnpm node-watch\"",
     "swc-watch": "swc src -w --out-dir dist",
