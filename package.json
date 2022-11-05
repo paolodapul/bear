@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "start": "concurrently \"pnpm swc-watch\" \"pnpm node-watch\"",
-    "swc-watch": "swc src/app.ts -w --out-dir dist",
+    "swc-watch": "swc src -w --out-dir dist",
     "node-watch": "node --watch dist/app.js",
     "lint": "eslint . --ignore-path .gitignore --ext .ts",
     "prettier": "prettier --ignore-path .gitignore \"**/*.+(ts|json)\"",
