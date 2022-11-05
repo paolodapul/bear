@@ -13,7 +13,7 @@ const logFormat = format.combine(
     const timeStamp = info.timestamp as string;
     const label = info.label as string;
     const message = info.message as string;
-    const level = info.level;
+    const { level } = info;
 
     return `[${timeStamp}] [${label}]@[${level}]: ${message.trim()}\n`;
   })
