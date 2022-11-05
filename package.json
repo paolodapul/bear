@@ -10,9 +10,10 @@
   },
   "engineStrict": true,
   "scripts": {
-    "start": "concurrently \"pnpm swc-watch\" \"pnpm node-watch\"",
+    "dev": "concurrently \"pnpm swc-watch\" \"pnpm node-watch\"",
     "swc-watch": "swc src -w --out-dir dist",
     "node-watch": "node --watch dist/app.js",
+    "start": "node dist/app.js",
     "lint": "eslint . --ignore-path .gitignore --ext .ts",
     "prettier": "prettier --ignore-path .gitignore \"**/*.+(ts|json)\"",
     "format": "pnpm prettier --write",
