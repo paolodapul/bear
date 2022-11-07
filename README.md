@@ -11,13 +11,13 @@ Features:
 
 Upcoming:
 
-- [ ] Validation with Zod
+- [x] Validation with Zod
+- [x] Testing with Jest
 - [ ] Routes
+- [ ] Prisma integration
 - [ ] GitHub Actions integration
 - [ ] Production monitoring with PM2
-- [ ] Prisma integration
-- [ ] Code-first GraphQL schema definition with TypeGraphQL
 - [ ] Docker
 - [ ] Use Postgres as database
 - [ ] Authentication
-- [ ] Testing with Jest
+- [ ] Code-first GraphQL schema definition with TypeGraphQL
