@@ -2,6 +2,7 @@ import dotenv from "dotenv";
 import express from "express";
 import log from "loglevel";
 import { logger } from "./middleware/logger";
+import { userHandler } from "./user";
 
 dotenv.config();
 
@@ -16,6 +17,10 @@ app.get("/", (req, res) => {
   );
 });
 
+app.get("/test", userHandler);
+
 app.listen(port, () => {
   log.warn(`Express is listening at http://localhost:${process.env.PORT}\n`);
 });
+
+export { app };
