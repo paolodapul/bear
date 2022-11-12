@@ -2,19 +2,20 @@
 
 Bear is an opinionated Node.js starter template.
 
-Features:
+### Status
 
-- Linting
-- Formatting
-- TypeScript-ready
-- Compiled with SWC
+Bear is currently in **experimental mode**, so it won't be guaranteed that everything will run in production with stability. Use this framework at your own risk.
 
-Upcoming:
+### Features:
 
-- [x] Validation with Zod
+- [x] Linting
+- [x] Formatting
+- [x] TypeScript-ready
+- [x] Compiled with SWC
+- [x] Request validation with Zod
 - [x] Testing with Jest
-- [ ] Routes
-- [ ] Prisma integration
+- [x] Routes
+- [ ] Prisma
 - [ ] GitHub Actions integration
 - [ ] Production monitoring with PM2
 - [ ] Docker
