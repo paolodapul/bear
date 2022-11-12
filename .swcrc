@@ -12,6 +12,5 @@
       "syntax": "typescript",
       "tsx": false
     }
-  },
-  "exclude": [".test.ts"]
+  }
 }
