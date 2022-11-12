@@ -16,6 +16,6 @@
   ],
   "rules": {
     "import/prefer-default-export": "off",
-    "allowForLoopAfterthoughts": true
+    "no-plusplus": "off"
   }
 }
