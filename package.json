@@ -17,6 +17,7 @@
     "start": "node dist/app.js",
     "test:all": "jest",
     "test:watch": "jest --watch",
+    "test:push": "jest --silent --noStackTrace",
     "lint": "eslint . --ignore-path .gitignore --ext .ts",
     "prettier": "prettier --ignore-path .gitignore \"**/*.+(ts|json)\"",
     "format": "pnpm prettier --write",
