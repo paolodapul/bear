@@ -1,4 +1,4 @@
-import { Request, Response } from "express";
+import { Request, Response, RequestHandler, NextFunction } from "express";
 import { z, ZodError } from "zod";
 
 const UserSchema = z.object({
@@ -9,10 +9,15 @@ type User = z.infer<typeof UserSchema>;
 
 const validateParams = (query: unknown) => UserSchema.parse(query);
 
-const userHandler = (req: Request, res: Response) => {
+const getUsersHandler: RequestHandler = (
+  req: Request,
+  res: Response,
+  next: NextFunction
+) => {
   try {
     const user: User = validateParams(req.query);
     res.status(200).send(user);
+    next();
   } catch (error: unknown) {
     if (error instanceof ZodError) {
       res.status(400).send({
@@ -23,4 +28,4 @@ const userHandler = (req: Request, res: Response) => {
   }
 };
 
-export { userHandler, validateParams };
+export { getUsersHandler, validateParams };
