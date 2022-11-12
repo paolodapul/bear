@@ -22,7 +22,7 @@
     "check-format": "pnpm prettier --check",
     "check-types": "tsc",
     "validate": "pnpm check-types && pnpm lint && pnpm check-format",
-    "transpile": "swc src -d dist",
+    "transpile": "swc src -d dist -C exclude=.test.ts -C minify=true -C jsc.minify.mangle=true -C jsc.minify.compress=true",
     "build": "pnpm validate && pnpm transpile",
     "prepare": "husky install",
     "clean": "rimraf dist"
