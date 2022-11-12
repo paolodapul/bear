@@ -19,8 +19,8 @@ app.get("/", (req, res) => {
 
 app.use(usersRouter);
 
-app.listen(port, () => {
+const server = app.listen(port, () => {
   log.warn(`Express is listening at http://localhost:${process.env.PORT}\n`);
 });
 
-export { app };
+export { server };
