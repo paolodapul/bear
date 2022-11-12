@@ -5,7 +5,7 @@
     "sourceType": "module",
     "project": "./tsconfig.json"
   },
-  "plugins": ["@typescript-eslint"],
+  "plugins": ["@typescript-eslint", "jest"],
   "extends": [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
@@ -17,5 +17,8 @@
   "rules": {
     "import/prefer-default-export": "off",
     "no-plusplus": "off"
+  },
+  "env": {
+    "jest/globals": true
   }
 }
