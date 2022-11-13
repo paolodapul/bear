@@ -1,5 +1,6 @@
-import { Request, Response, RequestHandler, NextFunction } from "express";
+import { Request, Response, NextFunction } from "express";
 import { z, ZodError } from "zod";
+import { getUsers } from "./user-queries";
 
 const UserSchema = z.object({
   name: z.string(),
@@ -9,14 +10,15 @@ type User = z.infer<typeof UserSchema>;
 
 const validateParams = (query: unknown) => UserSchema.parse(query);
 
-const getUsersHandler: RequestHandler = (
+const getUsersHandler = async (
   req: Request,
   res: Response,
   next: NextFunction
 ) => {
   try {
     const user: User = validateParams(req.query);
-    res.status(200).send(user);
+    const matchedUsers = await getUsers(user.name);
+    res.status(200).send(matchedUsers);
     next();
   } catch (error: unknown) {
     if (error instanceof ZodError) {
