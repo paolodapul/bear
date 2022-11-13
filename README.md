@@ -15,11 +15,11 @@ Bear is currently in **experimental mode**, so it won't be guaranteed that every
 - [x] Request validation with Zod
 - [x] Testing with Jest
 - [x] Routes
+- [x] Prisma
+- [x] Docker
+- [x] Use Postgres as database
 - [ ] class-transformer
-- [ ] Prisma
 - [ ] GitHub Actions integration
 - [ ] Production monitoring with PM2
-- [ ] Docker
-- [ ] Use Postgres as database
 - [ ] Authentication
 - [ ] Code-first GraphQL schema definition with TypeGraphQL
