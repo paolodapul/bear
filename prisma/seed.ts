@@ -13,13 +13,10 @@ async function main() {
   });
 }
 
-async function disconnect(): Promise<void> {
-  return prisma.$disconnect();
-}
-
 main()
-  .then(() => disconnect())
-  .catch((e) => {
+  .then(async () => prisma.$disconnect())
+  .catch(async (e) => {
     log.error(e);
+    await prisma.$disconnect();
     process.exit(1);
   });
