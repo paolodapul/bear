@@ -4,6 +4,6 @@
     "strict": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
-    "types": ["jest"]
+    "types": ["jest", "node"]
   }
 }
