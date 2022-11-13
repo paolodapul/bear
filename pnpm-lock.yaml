@@ -22,6 +22,7 @@ specifiers:
   eslint-plugin-import: ^2.26.0
   eslint-plugin-jest: ^27.1.5
   express: ^4.17.3
+  express-async-handler: ^1.2.0
   express-winston: ^4.2.0
   http-graceful-shutdown: ^3.1.9
   husky: ^7.0.4
@@ -43,6 +44,7 @@ dependencies:
   concurrently: 7.5.0
   dotenv: 16.0.3
   express: 4.18.2
+  express-async-handler: 1.2.0
   express-winston: 4.2.0_winston@3.8.2
   http-graceful-shutdown: 3.1.9
   loglevel: 1.8.0
@@ -2341,6 +2343,10 @@ packages:
       jest-message-util: 29.2.1
       jest-util: 29.2.1
     dev: true
+
+  /express-async-handler/1.2.0:
+    resolution: {integrity: sha512-rCSVtPXRmQSW8rmik/AIb2P0op6l7r1fMW538yyvTMltCO4xQEWMmobfrIxN2V1/mVrgxB8Az3reYF6yUZw37w==}
+    dev: false
 
   /express-winston/4.2.0_winston@3.8.2:
     resolution: {integrity: sha512-EMD74g63nVHi7pFleQw7KHCxiA1pjF5uCwbCfzGqmFxs9KvlDPIVS3cMGpULm6MshExMT9TjC3SqmRGB9kb7yw==}
