@@ -26,3 +26,8 @@ Bear is currently in **experimental mode**, so it won't be guaranteed that every
 ### Upcoming additions
 
 - [ ] File structure for Zod validators
+
+### Issues
+
+- [ ] Prettier check failing in CI
+- [ ] Running of tests halts the CI server
