@@ -18,8 +18,11 @@ Bear is currently in **experimental mode**, so it won't be guaranteed that every
 - [x] Prisma
 - [x] Docker
 - [x] Use Postgres as database
-- [ ] class-transformer
 - [ ] GitHub Actions integration
 - [ ] Production monitoring with PM2
 - [ ] Authentication
 - [ ] Code-first GraphQL schema definition with TypeGraphQL
+
+### Upcoming additions
+
+- [ ] File structure for Zod validators
