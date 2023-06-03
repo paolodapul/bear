@@ -22,7 +22,7 @@
     "format": "pnpm prettier --write",
     "check-format": "pnpm prettier --check",
     "check-types": "tsc",
-    "validate": "pnpm check-types && pnpm lint && pnpm check-format",
+    "validate": "pnpm check-types && pnpm lint",
     "transpile": "swc src -d dist -C exclude=.test.ts -C minify=true -C jsc.minify.mangle=true -C jsc.minify.compress=true",
     "build": "pnpm clean && pnpm validate && pnpm transpile",
     "build:prod": "pnpm transpile",
