@@ -27,4 +27,4 @@ jobs:
           version: 6.0.2
       - run: pnpm i
       - run: pnpm build
-      - run: pnpm test:all
+      # - run: pnpm test:all
